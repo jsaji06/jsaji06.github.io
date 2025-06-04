@@ -4,33 +4,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Saji | Freelance Web Designer</title>
-    <style>
-      body {
-    background-color: rgb(230, 230, 230);
-    color:#1f1f1f;
-    font-family: Helvetica, sans-serif;
-}
-
-h1 {
-    font-weight:lighter; 
-    font-size:96px;
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:100vh;
-}
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>This site is under construction.</h1>
+        <nav id="mobile-nav">
+            <i class="fa-solid fa-bars"
+                onclick="document.getElementsByClassName('menu')[0].style.display='block';document.body.style.overflow = 'hidden' "></i>
+            <div class="menu hidden">
+                <div class="mobile">hello</div>
+                <br>
+                <div class="mobile">about me</div>
+                <br>
+                <div class="mobile">my work</div>
+                <br>
+                <div class="mobile">contact</div>
+            </div>
+        </nav>
+        <nav id="default-nav">
+            <a class="active link">hello</a>
+            <a class="link">about me</a>
+            <a class="link">my work</a>
+            <a class="link">contact</a>
+        </nav>
+        <div id="hello" class="one section">
+            <div class="content">
+                <h3 data-aos="fade-right">hey there, I'm</h3>
+                <h1 data-aos="fade-right">JOSHUA SAJI</h1>
+                <p data-aos="fade-right">designer & developer based in the dmv.</p>
+            </div>
+        </div>
+
+        <div id="about" class="two section">
+            <h2 data-aos="fade-right">a bit about me.</h2>
+            <div class="two-content">
+                <p data-aos="fade-right" id="left">
+                    Hey there, I'm Joshua Saji and I am a (to-be) second-year student studying Computer Sciences at the University of Wisconsin - Madison. I am originally based in Rockville, Maryland, which is just 30 minutes away from Washington, D.C. As someone who has picked up programming when he was just 10 years old, I have found a deep passion for innovation in the world of technology. Nine years down the line, I am well-versed in various areas of programming, including full-stack web development, machine learning, and artificial intelligence. 
+                </p>
+                <p data-aos="fade-left" id="right">Outside of programming, I enjoy reading (currently Seneca's Letters to Lucilius), weightlifting, playing basketball, cooking, and writing. At my university, I am part of a magazine known as the Wisconsin Business Review, where I have one published article outlining my thoughts on the nature of generative art. I have a few article ideas I want to get around, so if you like what I've written so far, feel free to keep on the look out for a few new articles throughout this month. <br><br> Right now, I am creating a React Native application that combines my love for cooking with artificial intelligence, as somewhat outlined by the SmartChef project listed below. I've also made a web linear regression visualizer around a year ago, which is also listed on the projects header. Throughout the next few months, I will be focusing on creating more advanced, high-level applications and projects and list them here.</p>
+            </div>
+        </div>
+        <div id="work" class="three section">
+            <h2 data-aos="fade-right">my work.</h2>
+            <div class="writing">
+                <h3 data-aos="fade-right">writing.</h3>
+                <div class="carousel">
+                    <div data-aos='fade-down' class="article"
+                        onclick="window.open('https://medium.com/@iamjoshuasaji/the-paradox-behind-generative-art-14caea4177aa', '_blank' )">
+                        <h4>The Paradox Behind Generative AI</h4>
+                        <div class="overlay"></div>
+                        <img src="./imgs/paradox.png" alt="">
+                    </div>
+                    <div  data-aos='fade-up' class="article" onclick="window.open('https://medium.com/p/35be2050cc4b', '_blank')">
+                        <h4>I Made a Web Linear Regression Visualizer</h4>
+                        <div class="overlay"></div>
+                        <img src="./imgs/lin_reg.jpg" alt="">
+                    </div>
+                    <div data-aos='fade' class="article" onclick="window.open('https://medium.com/p/6ba685bdbe43', '_blank')">
+                        <h4>Machine Learning in Layman’s Terms</h4>
+                        <div class="overlay"></div>
+                        <img src="./imgs/machine_layman.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <h3 data-aos="fade-right">projects.</h3>
+                <div class="carousel">
+                    <div data-aos='fade-right' class="project">
+                        <div class="project-content">
+                            <h4>SmartChef</h4>
+                            <p class="icon-proj"><i id="react" class="fa-brands fa-react"></i></p>
+
+                            <p class="projectDesc">More details coming soon.</p>
+                        </div>
+                        <div class="overlay"></div>
+                        <div id="coming-soon">
+                            <h1>Coming soon!</h1>
+                        </div>
+                    </div>
+                    <div data-aos='fade-left' class="project" onclick="window.open('./lin-reg-viz-main/index.html', '_blank' )">
+                        <div class="project-content">
+                            <h4>Web Linear Regression Visualizer</h4>
+                            <p class="icon-proj"><i id="html" class="fa-brands fa-html5"></i> <i id="css"
+                                    class="fa-brands fa-css3-alt"></i><i id="js" class="fa-brands fa-js"></i></p>
+                            <p class="projectDesc">A simple visualizer of the inner workings of the linear regression
+                                algorithm with a sleek UI.</p>
+                        </div>
+                        <div class="overlay"></div>
+                        <img src="./imgs/lin-reg-proj.png" alt="">
+                    </div>
+                    <!-- <div class="project"> -->
+                    <!-- <img src="./imgs/lin_reg.jpg" alt=""> -->
+                    <!-- <h4>Machine Learning in Layman’s Terms</h4>
+                </div> -->
+                </div>
+            </div>
+        </div>
+        <div id="connect" class="four section">
+            <div data-aos='fade-right' class="header">
+                <h2>let's connect.</h2>
+            </div>
+            <div class="icons">
+                <i data-aos='fade-left' onclick="window.open('https://x.com/joshuasaji__', '_blank' )" class="fa-brands fa-x-twitter"
+                 id="twitter"></i>
+                <i data-aos='fade-left' onclick="window.open('https://www.linkedin.com/in/joshua-saji-a7805024a/', '_blank' )"
+                    class="fa-brands fa-linkedin" id="linkedin"></i>
+                <i data-aos='fade-left' onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=the.joshua.saji@gmail.com', '_blank' )"
+                    class="fa-solid fa-envelope" id="gmail"></i>
+                <i data-aos='fade-left' onclick="window.open('https://github.com/jsaji06', '_blank' )" class="fa-brands fa-github"
+                   id="github"></i>
+                <i data-aos='fade-left' onclick="window.open('https://medium.com/@iamjoshuasaji', '_blank' )" class="fa-brands fa-medium"
+                    id="medium"></i>
+            </div>
+        </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        let mobileLinks = Array.from(document.getElementsByClassName("mobile"));
+        let mobileNav = Array.from(document.getElementsByClassName("menu"))[0];
+        let links = Array.from(document.getElementsByClassName("link"));
+        let one = Array.from(document.getElementsByClassName("one"))[0];
+        let two = Array.from(document.getElementsByClassName("two"))[0];
+        let three = Array.from(document.getElementsByClassName("three"))[0];
+        let four = Array.from(document.getElementsByClassName("four"))[0];
+        for (let i = 0; i < mobileLinks.length; i++) {
+            mobileLinks[i].addEventListener("click", e => {
+                mobileNav.style.display = 'none';
+                document.body.style.overflow = ''
+                if (i == 0) {
+                    one.scrollIntoView({ behavior: 'smooth' })
+                }
+                else if (i == 1) {
+                    two.scrollIntoView({ behavior: 'smooth' })
+                }
+                else if (i == 2) {
+                    three.scrollIntoView({ behavior: 'smooth' })
+                }
+                else if (i == 3) {
+                    four.scrollIntoView({ behavior: 'smooth' })
+                }
+            })
+        }
+
+        for (let i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", e => {
+                clearActive(links)
+                links[i].classList.add("active")
+                document.body.style.overflow = ''
+                if (i == 0) {
+                    one.scrollIntoView({ behavior: 'smooth' })
+                }
+                else if (i == 1) {
+                    two.scrollIntoView({ behavior: 'smooth' })
+                }
+                else if (i == 2) {
+                    three.scrollIntoView({ behavior: 'smooth' })
+                }
+                else if (i == 3) {
+                    four.scrollIntoView({ behavior: 'smooth' })
+                }
+            })
+        }
+
+        function clearActive(links) {
+            for (let i = 0; i < links.length; i++) {
+                links[i].classList.remove("active")
+            }
+        }
+
+        const sections = document.querySelectorAll('.section');
+
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        clearActive(links)
+                        if (entry.target.id == 'hello') {
+                            links[0].classList.add("active")
+                        } else if(entry.target.id == 'about'){
+                            links[1].classList.add("active")
+                        } else if (entry.target.id == 'work'){
+                            links[2].classList.add("active")
+                        } else if (entry.target.id == 'connect'){
+                            links[3].classList.add("active");
+                        }
+                    }
+                });
+            },
+            {
+                threshold: 0.5 // Trigger when 60% of the section is visible
+            }
+        );
+        sections.forEach(section => observer.observe(section));
+
+    </script>
 </body>
 
 </html>
