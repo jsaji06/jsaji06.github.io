@@ -314,6 +314,13 @@ i:hover {
     color: #61dbfb;
 }
 
+#node {
+color:#215732;
+}
+
+#python {
+    color:#ffde57;
+}
 #mobile-nav {
     display: none;
 }
