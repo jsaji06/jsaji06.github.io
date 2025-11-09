@@ -79,7 +79,7 @@ p {
 
 .two img {
     height: 500px;
-    filter: grayscale(65%) contrast(105%) blur(1px);
+    filter: grayscale(100%) contrast(105%) blur(1px);
     border-radius: calc(10px * var(--scale));
     box-shadow: 3px 7.5px 15px var(--secondary-color);
 }
