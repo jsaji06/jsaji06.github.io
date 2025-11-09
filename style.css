@@ -78,10 +78,10 @@ p {
 }
 
 .two img {
-    height: 500px;
-    filter: grayscale(100%) contrast(105%) blur(1px);
+    height: 600px;
+    filter: grayscale(100%) contrast(105%);
     border-radius: calc(10px * var(--scale));
-    box-shadow: 3px 7.5px 15px var(--secondary-color);
+    box-shadow: 1px 2.5px 7.5px var(--secondary-color);
 }
 
 .two h3 {
