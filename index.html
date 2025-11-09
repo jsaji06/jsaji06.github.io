@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>I Am Joshua Saji</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,95 +12,97 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <nav id="mobile-nav">
-            <i class="fa-solid fa-bars"
-                onclick="document.getElementsByClassName('menu')[0].style.display='block';document.body.style.overflow = 'hidden' "></i>
-            <div class="menu hidden">
-                <div class="mobile">hello</div>
-                <br>
-                <div class="mobile">about me</div>
-                <br>
-                <div class="mobile">my work</div>
-                <br>
-                <div class="mobile">contact</div>
+        <div id="hello" class="one">
+            <div class="background-image">
+                <img data-aos="fade-down" src="./img1.png" alt="">
             </div>
-        </nav>
-        <nav id="default-nav">
-            <a class="active link">hello</a>
-            <a class="link">about me</a>
-            <a class="link">my work</a>
-            <a class="link">contact</a>
-        </nav>
-        <div id="hello" class="one section">
             <div class="content">
-                <h3 data-aos="fade-right">hey there, I'm</h3>
-                <h1 data-aos="fade-right">JOSHUA SAJI</h1>
-                <p data-aos="fade-right">designer & developer based in the dmv.</p>
+                <p data-aos="fade-right" data-aos-delay="500">hey, I'm</p>
+                <h1 data-aos="fade-right" data-aos-delay="600">JOSHUA SAJI</h1>
+                <p data-aos="fade-right" data-aos-delay="700">designer & developer based in the dmv.</p>
             </div>
         </div>
 
-        <div id="about" class="two section">
-            <h2 data-aos="fade-right">a bit about me.</h2>
-            <div class="two-content">
-                <p data-aos="fade-right" id="left">
-                    Hey there, I'm Joshua Saji and I am a (to-be) second-year student studying Computer Sciences at the University of Wisconsin - Madison. I am originally based in Rockville, Maryland, which is just 30 minutes away from Washington, D.C. As someone who has picked up programming when he was just 10 years old, I have found a deep passion for innovation in the world of technology. Nine years down the line, I am well-versed in various areas of programming, including full-stack web development, machine learning, and artificial intelligence. 
-                </p>
-                <p data-aos="fade-left" id="right">Outside of programming, I enjoy reading (currently Seneca's Letters to Lucilius), weightlifting, playing basketball, cooking, and writing. At my university, I am part of a magazine known as the Wisconsin Business Review, where I have one published article outlining my thoughts on the nature of generative art. I have a few article ideas I want to get around, so if you like what I've written so far, feel free to keep on the look out for a few new articles throughout this month. <br><br> Right now, I am creating a React Native application that combines my love for cooking with artificial intelligence, as somewhat outlined by the SmartChef project listed below. I've also made a web linear regression visualizer around a year ago, which is also listed on the projects header. Throughout the next few months, I will be focusing on creating more advanced, high-level applications and projects and list them here.</p>
-            </div>
-        </div>
-        <div id="work" class="three section">
-            <h2 data-aos="fade-right">my work.</h2>
-            <div class="writing">
-                <h3 data-aos="fade-right">writing.</h3>
-                <div class="carousel">
-                    <div data-aos='fade-down' class="article"
-                        onclick="window.open('https://medium.com/@iamjoshuasaji/the-paradox-behind-generative-art-14caea4177aa', '_blank' )">
-                        <h4>The Paradox Behind Generative AI</h4>
-                        <div class="overlay"></div>
-                        <img src="./imgs/paradox.png" alt="">
+        <div id="about" class="section">
+            <div class="two">
+                <div class="header" data-aos="fade">
+                    <h2>a bit about me.</h2>
+                    <p>memento mori, memento vivere</p>
+                </div>
+                <div class="two-content">
+                    <div class="left-content flex-three">
+                        <div class="subsection" data-aos="fade-right">
+                            <p id="left">
+                            <h3>who am i</h3>
+                            <p>i am currently a sophomore at the university of wisconsin-madison studying computer
+                                science with a certificate in business. i found my passion for tech when i wrote my
+                                first few lines of code at age 10 on roblox studio. since then, i've cultivated a
+                                passion for solving real-world problems and bringing my ideas and visions to life
+                                through fullstack, ai-powered app development, especially in creating solutions that
+                                fuel personal growth and development rather than serving highly specialized audiences.
+                            </p>
+                        </div>
                     </div>
-                    <div  data-aos='fade-up' class="article" onclick="window.open('https://medium.com/p/35be2050cc4b', '_blank')">
-                        <h4>I Made a Web Linear Regression Visualizer</h4>
-                        <div class="overlay"></div>
-                        <img src="./imgs/lin_reg.jpg" alt="">
+                    <div class="center-content flex-three">
+                        <img src="joshuasaji.png" data-aos="fade" />
                     </div>
-                    <div data-aos='fade' class="article" onclick="window.open('https://medium.com/p/6ba685bdbe43', '_blank')">
-                        <h4>Machine Learning in Layman’s Terms</h4>
-                        <div class="overlay"></div>
-                        <img src="./imgs/machine_layman.jpg" alt="">
-
+                    <div class="right-content flex-three">
+                        <div class="subsection" data-aos="fade-left">
+                            <h3>what i'm on</h3>
+                            <p>outside of schoolwork and coding, i also enjoy writing. on campus, i am part a writer of
+                                the tech committee of the wisconsin business review, where i'm authoring an analytical
+                                piece regarding ai development in the global south and other overlooked regions of the
+                                world. right now, i'm working on creating a substack to serve as a platform for my raw,
+                                authentic thoughts. if i'm not on my computer, you can find me playing basketball,
+                                watching the nba, weightlifting or reading.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="work" class="three section">
+            <div class="header-left">
+            <h2 data-aos="fade-right">a taste of what i've done.</h2>
+            <p data-aos="fade-right">although my passions primarily revolve around tech, i have many interests and am always willing to learn something new. below, you'll see a mix of my passion projects and writing: two of my favorite ways of self-expression and showcasing my vision.</p>
+        </div>
             <div class="projects">
                 <h3 data-aos="fade-right">projects.</h3>
                 <div class="carousel">
-                    <div data-aos='fade-right' class="project" onclick="window.open('https://github.com/jsaji06/smartchef', '_blank' )">
+                    <div data-aos='fade-right' class="project"
+                        onclick="window.open('https://github.com/jsaji06/smartchef', '_blank' )">
                         <div class="project-content">
                             <h4>Eloquence</h4>
-                            <p class="projectDesc">Anthropic-powered writing assistant designed to make your writing pieces sharper and polished.</p>
+                            <p class="icon-proj"><i id="react" class="fa-brands fa-react"></i><i id="node"
+                                    class="fa-brands fa-node-js"></i><i id="python" class="fa-brands fa-python"></i></p>
+
+                            <p class="projectDesc">Your AI-powered writing assistant made to help you think clearer.</p>
                         </div>
                         <div class="overlay"></div>
-                        <div id="coming-soon">
-                            <h1>Coming soon!</h1>
-                        </div>
+                        <img src="eloquenceimg.png" alt="">
                     </div>
-                    <div data-aos='fade-right' class="project" onclick="window.open('https://github.com/jsaji06/smartchef', '_blank' )">
+                    <div data-aos='fade-right' class="project"
+                        onclick="window.open('https://github.com/jsaji06/smartchef', '_blank' )">
                         <div class="project-content">
-                            <h4>SmartChef</h4>
-                            <p class="icon-proj"><i id="react" class="fa-brands fa-react"></i><i id="node" class="fa-brands fa-node-js"></i><i id="python" class="fa-brands fa-python"></i></p>
+                            <h4>smartChef</h4>
+                            <p class="icon-proj"><i id="react" class="fa-brands fa-react"></i><i id="node"
+                                    class="fa-brands fa-node-js"></i><i id="python" class="fa-brands fa-python"></i></p>
 
-                            <p class="projectDesc">A full-stack, OpenAI-powered application that generates, within seconds, recipes using your household ingredients.</p>
+                            <p class="projectDesc">A full-stack, OpenAI-powered application that generates, within
+                                seconds, recipes using your household ingredients.</p>
                         </div>
                         <div class="overlay"></div>
                         <img src="./imgs/smartchef-cover.png" alt="">
                     </div>
-                    <div data-aos='fade-left' class="project" onclick="window.open('./lin-reg-viz-main/index.html', '_blank' )">
+                    <div data-aos='fade-right' class="project"
+                        onclick="window.open('./lin-reg-viz-main/index.html', '_blank' )">
                         <div class="project-content">
                             <h4>Web Linear Regression Visualizer</h4>
                             <p class="icon-proj"><i id="html" class="fa-brands fa-html5"></i> <i id="css"
@@ -111,27 +113,56 @@
                         <div class="overlay"></div>
                         <img src="./imgs/lin-reg-proj.png" alt="">
                     </div>
-                </div> -->
                 </div>
             </div>
+            <div class="writing">
+                <h3 data-aos="fade-right">writing.</h3>
+                <p data-aos="fade-right">right now, i am currently developing my substack platform, containing pure, authentic thoughts of
+                    mine. as i write and post, this page will get updated with my work. </p>
+                <div class="carousel">
+                    <div data-aos='fade-right' class="article">
+                        <h4>The Increasing Importance of Authenticity & Tunnel Vision in the Digital Age</h4>
+                        <div class="background-coming-soon">
+                            <div class="overlay"></div>
+                            <div class="coming-soon">
+                                <h1>coming soon on substack.</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-aos='fade-right' class="article">
+                        <h4>Exploring Your Dreams As A College Student</h4>
+                        <div class="background-coming-soon">
+                            <div class="overlay"></div>
+                            <div class="coming-soon">
+                                <h1>coming soon on substack.</h1>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
         </div>
-        <div id="connect" class="four section">
-            <div data-aos='fade-right' class="header">
+        <div id="connect" data-aos="fade-right" class="four section">
+            <div class="header">
                 <h2>let's connect.</h2>
+                <p>always open to new opportunities and experiences, so feel free to contact me.</p>
             </div>
             <div class="icons">
-                <i data-aos='fade-left' onclick="window.open('https://x.com/joshuasaji__', '_blank' )" class="fa-brands fa-x-twitter"
-                 id="twitter"></i>
-                <i data-aos='fade-left' onclick="window.open('https://www.linkedin.com/in/joshua-saji-a7805024a/', '_blank' )"
+                <i onclick="window.open('https://x.com/joshuasaji__', '_blank' )" class="fa-brands fa-x-twitter"
+                    id="twitter"></i>
+                <i onclick="window.open('https://www.linkedin.com/in/joshua-saji-a7805024a/', '_blank' )"
                     class="fa-brands fa-linkedin" id="linkedin"></i>
-                <i data-aos='fade-left' onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=the.joshua.saji@gmail.com', '_blank' )"
+                <i onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=the.joshua.saji@gmail.com', '_blank' )"
                     class="fa-solid fa-envelope" id="gmail"></i>
-                <i data-aos='fade-left' onclick="window.open('https://github.com/jsaji06', '_blank' )" class="fa-brands fa-github"
-                   id="github"></i>
-                <i data-aos='fade-left' onclick="window.open('https://medium.com/@iamjoshuasaji', '_blank' )" class="fa-brands fa-medium"
-                    id="medium"></i>
+                <i onclick="window.open('https://github.com/jsaji06', '_blank' )" class="fa-brands fa-github"
+                    id="github"></i>
             </div>
         </div>
+    </div>
+
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -197,11 +228,11 @@
                         clearActive(links)
                         if (entry.target.id == 'hello') {
                             links[0].classList.add("active")
-                        } else if(entry.target.id == 'about'){
+                        } else if (entry.target.id == 'about') {
                             links[1].classList.add("active")
-                        } else if (entry.target.id == 'work'){
+                        } else if (entry.target.id == 'work') {
                             links[2].classList.add("active")
-                        } else if (entry.target.id == 'connect'){
+                        } else if (entry.target.id == 'connect') {
                             links[3].classList.add("active");
                         }
                     }
