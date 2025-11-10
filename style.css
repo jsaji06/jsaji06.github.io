@@ -78,7 +78,7 @@ p {
 }
 
 .two img {
-    height: 600px;
+    height: 500px;
     filter: grayscale(100%) contrast(105%);
     border-radius: calc(10px * var(--scale));
     box-shadow: 1px 2.5px 7.5px var(--secondary-color);
@@ -133,14 +133,17 @@ p {
 .right-content {
     margin-top: calc(190px * var(--scale));
     max-width: 33%;
+    text-align: right;
 }
 
 .two-content {
     display: flex;
     align-items: stretch;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
 }
+
+
 
 .two .header p {
     text-align: center;
@@ -165,15 +168,6 @@ h2 {
     margin: calc(15px * var(--scale)) 0;
 }
 
-/* .right-content {
-    display: flex;
-    flex-direction: column;
-    gap: calc(50px * var(--scale));
-}
-
-.right-content * {
-    align-self: flex-end;
-} */
 
 .article,
 .project {
@@ -475,7 +469,9 @@ i:hover {
         gap:50px;
 
     }
-
+    .right-content {
+        text-align: center;
+    }
     .section {
         align-items: center;
 
