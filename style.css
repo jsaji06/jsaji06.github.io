@@ -126,12 +126,12 @@ p {
 }
 
 .left-content {
-    margin-top: calc(-190px * var(--scale));
+    /* margin-top: calc(-190px * var(--scale)); */
     max-width: 33%;
 }
 
 .right-content {
-    margin-top: calc(190px * var(--scale));
+    /* margin-top: calc(190px * var(--scale)); */
     max-width: 33%;
     text-align: right;
 }
