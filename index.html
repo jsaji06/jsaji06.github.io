@@ -8,13 +8,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body style="background-color: black;color:white">
-    <div class="container" style="width:100vw;height:100vh;font-family: Helvetica;display: flex;align-items: center;justify-content: center;">
-        <h1 style="font-size:128px;letter-spacing: -.625rem;">where da luv</h1>
-    </div>
+<body>
+    <nav id="navbar">
+        <li class="li">
+            <p>home</p>
+        </li>
+        <li class="li">
+            <p>about</p>
+        </li>
+        <li class="li">
+            <p>work</p>
+        </li>
+        <li class="li">
+            <p>contact</p>
+        </li>
+    </nav>
+    <main class="container">
+
+        <section class="intro">
+            <header>
+                <p class="subheading">'sup, my name is</p>
+                <h1>joshua saji.</h1>
+            </header>
+        </section>
+        <section class="about">
+            <p class="subheading about-para italic">i am a designer and developer originally based in rockville, md, just
+                thirty minutes
+                away from the nation’s capitol. i am currently a sophomore @ the university of wisconsin studying
+                computer science and business. this summer, i will be joining the unitedhealth group as a tdp intern.
+            </p>
+        </section>
+        <section class="work">
+            <h2>a bit of my work.</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Priority</h3>
+                    <p>current creative lead @ priority. responsible for overhauling & reconstructing
+                        landing page, designing & implementing ui/ux for core features, and marketing direction.</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://eloquenceai.org" class="link bold">eloquenceai.org</a>
+                    <p>as a hobbyist writer, i realized that many of modern-day writing tools fail to provide
+                        substantive feedback on a piece’s idea, beyond the superficial grammar and cohesive structure.
+                        thus, i independently designed and developed this ai-powered web application to solve this.</p>
+                </div>
+        </section>
+        <section class="contact">
+            <h2>let's connect.</h2>
+            <div class="icons">
+                <a href="https://instagram.com/bookofjoshua__"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/joshua-saji-a7805024a/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+    <script>
+        const navbar = document.getElementById('navbar');
+        let li = document.getElementsByClassName('li');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                Array.from(li).forEach((item) => {
+                    item.classList.add('scrolled');
+                });
+            } else {
+                navbar.classList.remove('scrolled');
+                Array.from(li).forEach((item) => {
+                    item.classList.remove('scrolled'); // Changed from add to remove
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
