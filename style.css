@@ -32,9 +32,10 @@ h3 {
 }
 
 p {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.5;
     letter-spacing: -0.05em;
+    font-weight:300
 }
 
 p.about-para {
@@ -71,20 +72,22 @@ i {
 nav {
     display: flex;
     gap: 100px;
-    padding: 25px;
+    padding: 12.5px;
     position: fixed;
     z-index: 999;
     width: 100vw;
+    
 }
 
 nav.scrolled {
     border-bottom: 1px solid var(--secondary-color);
 }
 
-nav li {
+nav li a {
     text-decoration: none;
     list-style: none;
-    font-size: 28px;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 
